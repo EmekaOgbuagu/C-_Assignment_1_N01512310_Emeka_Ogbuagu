@@ -7,12 +7,9 @@ using System.Web.Http;
 
 namespace My_First_Project_N01512310_Emeka.Controllers
 {
-    public class AddTenController : ApiController
+    public class NumberMachineController : ApiController
     {
-        // Get: api/AddTen
         public int Get(int id) 
-        {
-            return id + 10; 
-        }
+        { return id + (id / id) - id; }  
     }
 }

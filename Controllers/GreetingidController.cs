@@ -7,12 +7,11 @@ using System.Web.Http;
 
 namespace My_First_Project_N01512310_Emeka.Controllers
 {
-    public class AddTenController : ApiController
+    public class GreetingidController : ApiController
     {
-        // Get: api/AddTen
-        public int Get(int id) 
+        public string Get(int id) 
         {
-            return id + 10; 
-        }
+            return "Greetings to " + id + " People";
+                }
     }
 }
